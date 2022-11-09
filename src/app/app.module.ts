@@ -5,8 +5,12 @@ import { StudentTeacherController } from 'src/teachers/student.controller';
 import { StudentService } from 'src/student/student.service';
 import { TeacherService } from 'src/teachers/teacher.service';
 @Module({
-  imports: [],
-  controllers: [StudentController, TeachersController, StudentTeacherController],
-  providers: [StudentService, TeacherService],
+    imports: [],
+    controllers: [
+        StudentController,
+        TeachersController,
+        StudentTeacherController,
+    ],
+    providers: [StudentService, TeacherService],
 })
 export class AppModule {}
